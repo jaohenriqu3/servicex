@@ -29,12 +29,12 @@ public class SecurityConfig {
     public void configureGlobal(AuthenticationManagerBuilder auth) throws Exception {
         PasswordEncoder passwordEncoder = PasswordEncoderFactories.createDelegatingPasswordEncoder();
         auth.inMemoryAuthentication()
-                .withUser("Diego")
+                .withUser("João")
                 .password(passwordEncoder.encode("12345"))
                 .roles("USER")
                 .and()
-                .withUser("Patricio")
-                .password(passwordEncoder.encode("987654"))
+                .withUser("Henrique")
+                .password(passwordEncoder.encode("54321"))
                 .roles("USER", "ADMIN");;
     }
 }
