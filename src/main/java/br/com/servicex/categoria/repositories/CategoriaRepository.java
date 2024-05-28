@@ -1,6 +1,7 @@
 package br.com.servicex.categoria.repositories;
 
 import br.com.servicex.categoria.domain.Categoria;
+import org.mockito.Mock;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
