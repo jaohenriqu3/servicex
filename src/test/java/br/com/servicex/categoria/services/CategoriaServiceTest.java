@@ -2,6 +2,9 @@ package br.com.servicex.categoria.services;
 
 import br.com.servicex.categoria.domain.Categoria;
 import br.com.servicex.categoria.repositories.CategoriaRepository;
+import br.com.servicex.servico.domain.Servico;
+import br.com.servicex.servico.repositories.ServicoRepository;
+import br.com.servicex.servico.services.ServicoService;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
@@ -18,6 +21,7 @@ import static org.mockito.Mockito.doNothing;
 class CategoriaServiceTest {
     @InjectMocks
     private CategoriaService categoriaService;
+
     @Mock
     private CategoriaRepository categoriaRepository;
 
@@ -45,8 +49,8 @@ class CategoriaServiceTest {
     public void testDeletarCategoria_Sucess(){
         Integer id = 1;
         doNothing().when(categoriaRepository).deleteById(id);
-        //doNothing().when(categoriaService).buscarCategoriaPorId(id);
-        //doNothing().when(categoriaService).buscarCategoriaPorId(id);
+        // doNothing().when(categoriaService).buscarCategoriaPorId(id);
+        // doNothing().when(categoriaService).buscarCategoriaPorId(id);
 
         categoriaService.deletarCategoria(id);
 
