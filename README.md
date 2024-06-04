@@ -1,3 +1,3 @@
 # SERVICEX
 
-Api de gerenciamento de serviços realizada na materia de tecnologia para Back-End 2 na UNIESP - Centro Universitário 
+Api para gerenciamento de serviços e categorias, realizada na materia de tecnologia para Back-End 2 (UNIESP - Centro Universitário) 
